@@ -37,7 +37,7 @@ def drawall(img, buttonlist):
 
 while True:
     success, img = cap.read()
-
+    img = cv.flip(img,1)
     if not success:
         print("Failed to capture frame from the camera.")
         break
